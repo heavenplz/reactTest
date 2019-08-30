@@ -19,11 +19,19 @@ module.exports = {
                 test:/\.js|jsx$/,
                 use:'babel-loader',
                 exclude:/node_modules/
+            },
+            {
+                test:/\.css$/,
+                use:['style-loader','css-loader?modules']
+            },
+            {
+                test:/\.ttf|.woff|.woff2|.eot|.svg$/,
+                use:['url-loader']
             }
         ]
     },
     resolve:{
-        extensions:['.js','.jsx','.json'],
+        extensions:['.js','.jsx','.json','.css'],
         alias: {
             '@':path.join(__dirname,'./src') //这样@就表示项目根目录中的路径
         }
