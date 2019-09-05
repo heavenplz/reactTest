@@ -24,7 +24,7 @@ module.exports = {
                 use:['style-loader','css-loader']
             },
             {
-                test:/\.ttf|.woff|.woff2|.eot|.svg$/,
+                test:/\.ttf|.woff|.woff2|.eot|.svg|.jpg$/,
                 use:['url-loader']
             },//打包处理字体文件的 loader
             {

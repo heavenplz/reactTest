@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\luffy\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add prop-types
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\TortoiseGit\bin;D:\Program Files\Git\cmd;C:\Program Files\Calibre2\;C:\Program Files\nodejs\;C:\Users\luffy\AppData\Local\Microsoft\WindowsApps;;C:\Users\luffy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\luffy\AppData\Roaming\npm
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\luffy\AppData\Local\Yarn\Cache\v4\npm-ansi-styles-2.2.1-b432dd3358b634cf75e1e4664368240533c1ddbe\node_modules\ansi-styles\package.json' -> 'F:\css\reactTest\reactTest\node_modules\babel-code-frame\node_modules\ansi-styles\package.json'
+
+npm manifest: 
+  {
+    "name": "webpackcode",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "webpack-dev-server --open chrome --port 3000 --hot --host 127.0.0.1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "babel-core": "^6.26.3",
+      "babel-preset-react": "^6.24.1",
+      "babel-loader": "^7.1.5",
+      "babel-plugin-transform-runtime": "^6.23.0",
+      "html-webpack-plugin": "^3.2.0",
+      "webpack": "^4.39.3",
+      "webpack-cli": "^3.3.7",
+      "webpack-dev-server": "^3.8.0"
+    },
+    "dependencies": {
+      "react": "^16.9.0",
+      "react-dom": "^16.9.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

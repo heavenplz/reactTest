@@ -12,10 +12,20 @@ export default class CmpSend extends React.Component{
 
     submit = ()=>{
         console.log(this.refs.user.value+"@"+this.refs.content.value);
-        
-        var temp = JSON.parse(localStorage.getItem("CmpD"));
+     
+        var cmp = {user:this.refs.user.value,content:this.refs.content.value}
 
-        var cmp = {"user":{this.refs.user.value}}
+        var tempArr = JSON.parse(localStorage.getItem("CmpD")||'[]'); 
+
+        tempArr.unshift(cmp);
+
+        localStorage.setItem("CmpD",JSON.stringify(tempArr))
+
+        this.refs.user.value = this.refs.content.value = '';
+        
+        alert('提交成功');
+
+        this.props.reload();
         
     }
 

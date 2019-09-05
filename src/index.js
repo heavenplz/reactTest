@@ -13,14 +13,10 @@ import BindEvent from './components/BindEvent';
 import PageHome from '@/components/PageHome'
 import CmpHome from '@/components/pllb/CmpHome';
 
+import App from '@/components/jd/App'
 
 
-ReactDOM.render(<div>
-{/* <CmpList></CmpList>
-<BindEvent></BindEvent> */}
-{/* <PageHome></PageHome>
-<DatePicker></DatePicker> */}
 
-<CmpHome></CmpHome>
-
-</div>,document.getElementById('app'));
+ReactDOM.render(
+<App></App>
+,document.getElementById('app'));
