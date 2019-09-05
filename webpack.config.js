@@ -4,7 +4,6 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 const htmlPlugin = new HtmlWebPackPlugin({
     template: path.join(__dirname,'./src/index.html'),//源文件
     filename:'index.html' //生成内存中首页的
-    
 })
 
 
@@ -22,11 +21,15 @@ module.exports = {
             },
             {
                 test:/\.css$/,
-                use:['style-loader','css-loader?modules']
+                use:['style-loader','css-loader']
             },
             {
                 test:/\.ttf|.woff|.woff2|.eot|.svg$/,
                 use:['url-loader']
+            },//打包处理字体文件的 loader
+            {
+                test:/\.scss$/,
+                use:['style-loader','css-loader?modules','sass-loader']
             }
         ]
     },
@@ -35,7 +38,6 @@ module.exports = {
         alias: {
             '@':path.join(__dirname,'./src') //这样@就表示项目根目录中的路径
         }
-
     }
     
 }

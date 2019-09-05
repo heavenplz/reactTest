@@ -1,6 +1,6 @@
 import React from 'react'
 
-import cssObj from '@/css/cmpItem'
+import cssObj from '@/css/cmpItem.scss'
 
 const Style = {
     itemStyle: { border: '1px dashed #ccc', margin: '10px', padding: '10px', boxShadow: '0 0 10px #ccc' },
