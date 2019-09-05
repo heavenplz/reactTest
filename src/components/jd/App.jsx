@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {BrowserRouter as Router,Link,Route} from 'react-router-dom'
+import {BrowserRouter as Router,HashRouter,Link,Route} from 'react-router-dom'
 
 import { Layout, Menu, Breadcrumb } from 'antd';
 
@@ -20,18 +20,18 @@ export default class App extends React.Component{
     }
     
     render(){
-        return <Router><Layout className="layout" style={{height:'100%'}}>
+        return <HashRouter><Layout className="layout" style={{height:'100%'}}>
         <Header>
           <div className={style.logo} />
           <Menu
             theme="dark"
             mode="horizontal"
-            defaultSelectedKeys={['1']}
+            defaultSelectedKeys={window.location.hash.split('/')[1]}
             style={{ lineHeight: '64px' }}
           >
-           <Menu.Item key="1"><Link to="/home">首页</Link></Menu.Item> 
-           <Menu.Item key="2"> <Link to="/moive">电影</Link></Menu.Item>
-            <Menu.Item key="3"><Link to="/about">关于</Link></Menu.Item>
+           <Menu.Item key="home"><Link to="/home">首页</Link></Menu.Item> 
+           <Menu.Item key="moive"> <Link to="/moive">电影</Link></Menu.Item>
+            <Menu.Item key="about"><Link to="/about">关于</Link></Menu.Item>
           </Menu>
         </Header>
 
@@ -47,7 +47,7 @@ export default class App extends React.Component{
 
         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
       </Layout>
-        </Router>
+        </HashRouter>
     }
 
 }
