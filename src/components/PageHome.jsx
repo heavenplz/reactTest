@@ -11,20 +11,36 @@ import Page3 from '@/components/Page3'
 export default class PageHome extends React.Component{
 
     render(){
-        return <Router>
-            <div>
-            路由根<hr/>
-            <Link to="/page1/type1/id3" >1</Link><hr/>
-            <Link to="/page2" >2</Link><hr/>
-            <Link to="/page3">3</Link><hr/>
-            {/* <Link to="/" >4</Link><hr/> */}
+        // return <Router>
+        //     <div>
+        //     路由根<hr/>
+        //     <Link to="/page1/type1/id3" >1</Link><hr/>
+        //     <Link to="/page2" >2</Link><hr/>
+        //     <Link to="/page3">3</Link><hr/>
+        //     {/* <Link to="/" >4</Link><hr/> */}
 
-            <Route path="/page1/:type/:id" component={Page1} ></Route>
-            <Route path="/page2" component={Page2}></Route>
-            <Route path="/page3" component={Page3}></Route>
-            {/* <Route path="/" component={Page1}></Route> */}
+        //     <Route path="/page1/:type/:id" component={Page1} ></Route>
+        //     <Route path="/page2" component={Page2}></Route>
+        //     <Route path="/page3" component={Page3}></Route>
+        //     {/* <Route path="/" component={Page1}></Route> */}
             
-            </div>
-        </Router>
+        //     </div>
+return <div> sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf 
+             sdfadfasdfadfadf  sdfadfasdfadfadf 
+             {/* sdfadfasdfadfadf   <img src={[require("@/img/DSC01148.jpg")]}/> */}
+             <div>
+sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf 
+
+
+sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf 
+
+
+sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf  sdfadfasdfadfadf 
+
+
+sdfadfasdfadfadf  sdfadfasdfadfadf </div></div>
+
+
+     
     }
 }

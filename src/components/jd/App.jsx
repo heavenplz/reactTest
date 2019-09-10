@@ -26,17 +26,17 @@ export default class App extends React.Component{
           <Menu
             theme="dark"
             mode="horizontal"
-            defaultSelectedKeys={window.location.hash.split('/')[1]}
+            defaultSelectedKeys={[window.location.hash.split('/')[1]]}
             style={{ lineHeight: '64px' }}
           >
            <Menu.Item key="home"><Link to="/home">首页</Link></Menu.Item> 
-           <Menu.Item key="moive"> <Link to="/moive">电影</Link></Menu.Item>
+           <Menu.Item key="moive"> <Link to="/moive/hot/1">电影</Link></Menu.Item>
             <Menu.Item key="about"><Link to="/about">关于</Link></Menu.Item>
           </Menu>
         </Header>
 
 
-        <Content style={{ backgroundColor:'#fff'}}>
+        <Content style={{ backgroundColor:'#fff',height:'100%'}}>
             <Route path="/home" component={HomeContainer}></Route>
             <Route path="/moive" component={MoiveContainer}></Route>
             <Route path="/about" component={AboutContainer}></Route>

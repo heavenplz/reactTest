@@ -10,13 +10,17 @@ import CmpItem from '@/components/Cmpitem'
 import CmpList from '@/components/CmpList'
 import BindEvent from './components/BindEvent';
 
+import {BrowserRouter as Router,HashRouter,Link,Route} from 'react-router-dom'
+
 import PageHome from '@/components/PageHome'
-import CmpHome from '@/components/pllb/CmpHome';
+import TestLoadable from '@/components/TestLoadable';
+// import CmpHome from '@/components/pllb/CmpHome';
 
 import App from '@/components/jd/App'
 
-
+// const PageHome = loadable(()=>import('@/components/PageHome'))
 
 ReactDOM.render(
+
 <App></App>
 ,document.getElementById('app'));
